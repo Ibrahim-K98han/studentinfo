@@ -11,16 +11,16 @@ fun main (){
     println("Student Registration form")
     println("---------------------------")
     while (isRepeat){
-        println("Enter Student Name : ")
-        val name = scanner.nextLine()
+        print("Enter Student Name : ")
+        val name = scanner.next()
         //println()
-        println("Enter student ID : ")
-        val id = scanner.nextLine()
+        print("Enter student ID : ")
+        val id = scanner.next()
        // println()
         println("Select Department : ")
         println("---------------------------")
         print("1. CSE \t2. BBA \t3. EEE")
-       // println()
+        println()
         val choice = scanner.nextInt()
         var deptName:String = ""
         when (choice){
@@ -45,7 +45,7 @@ fun main (){
             courseList = courseList)
         studentList.add(student)
         println("Add another student? Y/N")
-        val yn = scanner.nextLine()
+        val yn = scanner.next()
         isRepeat = yn.lowercase() == "y"
     }
     studentList.forEach {
