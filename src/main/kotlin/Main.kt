@@ -8,20 +8,19 @@ fun main (){
     var isRepeat = true
     val studentList = mutableListOf<Student>()
     val scanner = Scanner(System.`in`)
-
+    println("Student Registration form")
+    println("---------------------------")
     while (isRepeat){
-        println("Student Registration form")
-        println("---------------------------")
         println("Enter Student Name : ")
         val name = scanner.nextLine()
-        println()
+        //println()
         println("Enter student ID : ")
         val id = scanner.nextLine()
-        println()
+       // println()
         println("Select Department : ")
         println("---------------------------")
         print("1. CSE \t2. BBA \t3. EEE")
-        println()
+       // println()
         val choice = scanner.nextInt()
         var deptName:String = ""
         when (choice){
